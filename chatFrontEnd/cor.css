@@ -1,0 +1,22 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(10, 3, 3);
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+.btn-verde {
+    background-color: green;
+}
+.btn-vermelho {
+    background-color: red;
+}
+.btn-azul {
+    background-color: blue;
+}
+.btn-amarelo {
+    background-color: yellow;
+    color: black; /* Para melhor contraste */
+}

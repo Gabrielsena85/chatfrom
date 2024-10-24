@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <script src="chat.js"></script>
+    <title>Chat</title>
+    <link rel="stylesheet" href="cor.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="messages" id="messages"></div>
+    <button onclick="rolar1d6()">Gire o Dado</button>
+    <input type="text" id="nickname" placeholder="Seu Apelido">
+    <input type="text" id="message" placeholder="Sua mensagem">
+    <button onclick="enviarMensagen()">Enviar</button>
+</div>
+
+<script>
+    setInterval(carregarMensagens, 3000);
+</script>
+
+</body>
+</html>

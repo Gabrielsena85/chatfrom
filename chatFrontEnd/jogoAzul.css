@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../../Desktop/morfeu.png) ;
+    background-size: 100%;
+    color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button
+{
+    background-color:blue;
+    color:black;
+    font-weight: bolder;
+}

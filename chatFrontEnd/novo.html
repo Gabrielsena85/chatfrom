@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolar Dados</title>
+    <link rel="stylesheet" href="jogoAzul.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        
+        .botao {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .botao-verde { background-color: #28a745; }
+        .botao-vermelho { background-color: #dc3545; }
+        .botao-azul { background-color: #007bff; }
+        
+        h2 { margin-top: 20px; }
+    </style>
+</head>
+
+<body>
+    <h1>Role os dados</h1>
+    <button class="botao botao-verde" id="rolarBtn">Rolar Dado</button>
+    <button class="botao botao-vermelho" id="resetBtn">Reiniciar</button>
+    <h2 id="resultado"></h2>
+
+    <script>
+        function rolarDado(lados = 6) {
+            return Math.floor(Math.random() * lados) + 1;
+        }
+
+        document.getElementById('rolarBtn').addEventListener('click', function() {
+            const resultado = rolarDado();
+            document.getElementById('resultado').textContent = `O resultado do dado é: ${resultado}`;
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', function() {
+            document.getElementById('resultado').textContent = '';
+        });
+    </script>
+
+<u1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><a href=chat.html><button class="btn btn-azul">Volta para o chat</button></a>
+</u1>
+</body>
+</html>
